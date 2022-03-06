@@ -33,7 +33,7 @@ export class AppSync extends Construct {
     });
     new cdk.CfnOutput(this, "GraphQLApiEndpoint", {
       value: api.graphqlUrl
-    });
+    }).overrideLogicalId("GraphQLApiEndpoint");
 
     const dataType = schema.addType(
       new aws_appsync_alpha.ObjectType("data", {

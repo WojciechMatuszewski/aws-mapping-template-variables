@@ -1,0 +1,7 @@
+{
+  "CodeStack": {
+    "APIGWAPIEndpoint7A697D73": "https://jfec5ze456.execute-api.eu-west-1.amazonaws.com/prod/",
+    "APIEndpoint": "https://jfec5ze456.execute-api.eu-west-1.amazonaws.com/prod/",
+    "GraphQLApiEndpoint": "https://kpvfqrsjavcmtfrouavyo64zwu.appsync-api.eu-west-1.amazonaws.com/graphql"
+  }
+}

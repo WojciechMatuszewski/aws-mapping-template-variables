@@ -17,6 +17,9 @@ export class APIGW extends Construct {
     );
 
     const api = new aws_apigateway.RestApi(this, "API", {});
+    new cdk.CfnOutput(this, "APIEndpoint", {
+      value: api.url
+    }).overrideLogicalId("APIEndpoint");
 
     const rootGETMethod = api.root.addMethod(
       "GET",
